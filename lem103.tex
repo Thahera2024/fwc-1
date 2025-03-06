@@ -1,0 +1,63 @@
+ 
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\usepackage{enumitem} % For custom list numbering
+\usepackage{amssymb}  % For symbols
+\usepackage{multicol}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}            \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CHAPTER-4 \\ DETERMINANTS}
+\end{center}
+
+\section*{EXERCISE - 4.3}
+\begin{enumerate}
+    \item Find the area of the triangle with vertices at the point
+    \begin{enumerate}[label=(\roman*)]
+      \begin{multicols}{2} % 3 columns
+        \item (1,0), (6,0), (4,3)  
+        \item (2,7), (1,1), (10,8)  
+        \item (-2,-3), (3,2), (-1,-8)
+      \end{multicols}
+    \end{enumerate}
+    \item Show that points  \[\mathbf{A} (a, b + c), \quad \mathbf{B} (b, c + a), \quad \mathbf{C} (c, a + b) are collinear\]
+
+    \item Find values of \( k \) if the area of the triangle is 4 
+
+    \begin{enumerate}[label=(\roman*)]
+        \begin{multicols}{2}                                      
+           \item \( (k, 0), (4, 0), (0, 2)  \)
+           \item \( (-2, 0), (0, 4), (0, k) \)
+         \end{multicols}
+    \end{enumerate}
+
+    \item
+    \begin{enumerate}[label=(\roman*)]
+        \item Find the equation of joining \( (1,2)  and (3,6) \) using determinants.
+        \item Find the equation of the line joining \( (3,1)  and (9,3) \) using determinants.
+    \end{enumerate}
+
+    \item If the area of the triangle is 35 sq. units with vertices \( (2, -6), (5, 4) and (k, 4) \)then k is
+
+    \begin{enumerate}[label=(\Alph*)]
+     \begin{multicols}{4} % Adjust column count if needed
+        \item 12  
+        \item -2  
+        \item -12, -2  
+        \item 12, -2
+     \end{multicols}
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
